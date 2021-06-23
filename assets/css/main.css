@@ -110,12 +110,12 @@ body p{
     color: #021B5E;
     font-family: Ubuntu-Bold;
 }
+.card a {
+    text-decoration: none !important;
+}
 .card .item:hover {
     background-color: #021B5E;
-}  
-.card .item img {
-    fill: #F0FFFF;
-}
-.card .item object:hover {
-    fill: #F0FFFF;
-}
+} 
+
+
+
