@@ -164,3 +164,33 @@ body p{
 .descriptionDoc{
     color: gray;
 }
+.app {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 20px;
+}
+.card {
+    flex-direction: inherit;
+    flex-wrap: wrap;
+}
+.card .item {
+    width: 115px;
+    height: 115px;
+    background-color: #8BDDFC;
+    border-radius: 12px;
+    
+    padding: 20px;
+    margin: 5px;
+    text-align: center;
+    color: #021B5E;
+    font-family: Ubuntu-Bold;
+}
+.card .item:hover {
+    background-color: #021B5E;
+}  
+.card .item img {
+    fill: #F0FFFF;
+}
+.card .item object:hover {
+    fill: #F0FFFF;
+}

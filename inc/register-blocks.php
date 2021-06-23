@@ -15,6 +15,17 @@ if( function_exists('acf_add_options_page') ) {
         'redirect'		=> false
     ));
 
+    acf_register_block_type(array(
+        'name'              => 'app-home',
+        'title'             => __('app-home'),
+        'description'       => __('app home'),
+        'render_template'   => 'template-parts/blocks/app-home/index.php',
+        'icon'              => 'admin-comments',
+        'keywords'          => array('home', 'app'),
+        'category' => 'widgets'
+    
+    ));
+
 }
 
 acf_register_block_type(array(

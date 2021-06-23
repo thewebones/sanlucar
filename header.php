@@ -17,6 +17,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
     <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/sanlucar/vendors/bootstrap.min.css">
+	<link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/sanlucar/vendors/swiper-bundle.min.css">
 	<link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/sanlucar/assets/css/main.css">
 	<?php wp_head(); ?>
 </head>
