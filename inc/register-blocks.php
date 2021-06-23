@@ -16,3 +16,14 @@ if( function_exists('acf_add_options_page') ) {
     ));
 
 }
+
+acf_register_block_type(array(
+    'name'              => 'docs',
+    'title'             => __('Lista de documentos'),
+    'description'       => __('Lista de todos los documentos'),
+    'render_template'   => 'template-parts/blocks/documentos/index.php',
+    'icon'              => 'admin-comments',
+    'keywords'          => array('docs', 'documentos'),
+    'category' => 'widgets'
+
+));
