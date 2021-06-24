@@ -168,10 +168,13 @@ body p{
     margin-left: auto !important;
     margin-right: auto !important;
     padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
 }
 .card {
     flex-direction: inherit;
     flex-wrap: wrap;
+    border: none;
 }
 .card .item {
     width: 115px;
@@ -184,23 +187,15 @@ body p{
     text-align: center;
     color: #021B5E;
     font-family: Ubuntu-Bold;
+    position: relative;
 }
 .card a {
     text-decoration: none !important;
 }
 .card .item:hover {
     background-color: #021B5E;
-<<<<<<< HEAD
 } 
-
-
-
-=======
-}  
-.card .item img {
-    fill: #F0FFFF;
+.card .item .item-nombre {
+    font-weight: 600;
+    color: #021B5E;
 }
-.card .item object:hover {
-    fill: #F0FFFF;
-}
->>>>>>> 2a9cbb0453f7679618829a41170408e1e3bfd6f0
