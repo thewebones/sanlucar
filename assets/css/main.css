@@ -202,12 +202,16 @@ body p{
     margin-left: auto !important;
     margin-right: auto !important;
     padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
 }
-.card {
+.app .card {
     flex-direction: inherit;
     flex-wrap: wrap;
+    border: none;
+    height: 100%;
 }
-.card .item {
+.app .card .item {
     width: 115px;
     height: 115px;
     background-color: #8BDDFC;
@@ -218,15 +222,73 @@ body p{
     text-align: center;
     color: #021B5E;
     font-family: Ubuntu-Bold;
+    position: relative;
 }
-.card .item:hover {
+.app .card a {
+    text-decoration: none !important;
+}
+.app .card .item:hover {
     background-color: #021B5E;
-}  
-.card .item img {
-    fill: #F0FFFF;
+} 
+.app .card .item .item-nombre {
+    font-weight: 600;
+    color: #021B5E;
 }
-.card .item object:hover {
-    fill: #F0FFFF;
+
+
+.container {
+     margin-top: 100px;
+     margin-left: auto !important;
+     margin-right: auto !important;
+}
+
+.image-section {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border: solid #8BDDFC 4px;
+    border-radius: 10px;
+    width: 1139px;
+    height: 156px;
+    margin-bottom: 50px;
+
+
+}
+.imagendestacada {
+    background: #8BDDFC ;
+    width: 76px;
+    height: 76px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px ;
+    margin-right: 30px;
+    border-radius: 10px;
+}
+.post-content {
+    width: 895px;
+    height: 73px;
+    margin-bottom: 42px;
+    margin-top: 41px;
+}
+.titulo-post {
+    color: #021B5E;
+    font-size: 24px;
+    font-family: "Helvetica Neue";
+    letter-spacing: 0.75px;
+    line-height: 12px;
+    font-weight: 900;
+}
+.excerpt-post {
+    font-size: 16px;
+    color: #575A62;
+    letter-spacing: 0.5px;
+    line-height: 24px;
+    margin-top: 15px;
+}
+.flecha {
+    width: 42px;
+    height: 22px;
 }
 
 @media (max-width:1256px){
@@ -319,3 +381,9 @@ body p{
         font-size: 10px;
     }
 }
+.link-flecha {
+    margin-top: 104px;
+    margin-bottom: 32px;
+}
+
+

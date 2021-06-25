@@ -29,6 +29,16 @@ if( function_exists('acf_add_options_page') ) {
 }
 
 acf_register_block_type(array(
+    'name'              => 'noticias-section',
+    'title'             => __('noticias section'),
+    'description'       => __('noticias'),
+    'render_template'   => 'template-parts/blocks/noticias-section/index.php',
+    'icon'              => 'admin-comments',
+    'keywords'          => array('noticias', 'seccion'),
+    'category' => 'widgets'
+
+));
+acf_register_block_type(array(
     'name'              => 'docs',
     'title'             => __('Lista de documentos'),
     'description'       => __('Lista de todos los documentos'),
@@ -38,3 +48,4 @@ acf_register_block_type(array(
     'category' => 'widgets'
 
 ));
+
