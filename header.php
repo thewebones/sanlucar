@@ -36,18 +36,20 @@
 		</div>
 		<div class="logoContainer">
 			<a href="<?php echo get_field("logo_url","option") ?>">
-			<img style="margin-top:-36.5px;" width="146px" height="73px" src="<?php echo get_field("logo","option") ?>"/>
+			<img class="imgLogo" style="margin-top:-36.5px;" src="<?php echo get_field("logo","option") ?>"/>
 			</a>
 		</div>
-		<div class="menuContainer">
+		<div class="menuContainer" >
 			<div class="menu">
 				<?php if(get_field("repeater_menu_principal","option")) 
 				foreach(get_field("repeater_menu_principal","option") as $item){
 				?>
-				<div class="itemMenu">
-					<div class="imagenMenu">
-						<a href="<?php echo $item["enlace_item_menu"]["url"]?>">
-						<img src="<?php echo $item["icono_item_menu"]?>"/>
+				<div class="itemMenu"   >
+					<div class="<?php if($item["enlace_item_menu"]["title"]==="ALERTAS") echo "notify"?>"><span><?php if($item["enlace_item_menu"]["title"]==="ALERTAS") echo 1?></span></div>
+					<div onMouseOut="mostrar(event)" onMouseOver="ocultar(event)" class="imagenMenu">
+						<a class="link" href="<?php echo $item["enlace_item_menu"]["url"]?>">
+						<img class="front" src="<?php echo $item["icono_item_menu"]?>"/>
+						<img class="back" src="<?php echo $item["icono_item_menu_hover"]?>"/>
 						</a>
 					</div>
 					<a class="textoMenu" href="<?php echo $item["enlace_item_menu"]["url"]?>"><?php echo $item["enlace_item_menu"]["title"] ?></a>
