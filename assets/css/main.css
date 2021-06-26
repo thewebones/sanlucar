@@ -236,7 +236,7 @@ body p{
 }
 
 
-.container {
+.noticias {
      margin-top: 100px;
      margin-left: auto !important;
      margin-right: auto !important;
@@ -276,8 +276,9 @@ body p{
     font-size: 24px;
     font-family: "Helvetica Neue";
     letter-spacing: 0.75px;
-    line-height: 12px;
+    line-height: 20px;
     font-weight: 900;
+    text-align: left;
 }
 .excerpt-post {
     font-size: 16px;
@@ -386,4 +387,82 @@ body p{
     margin-bottom: 32px;
 }
 
+@media (max-width: 1223px) {
+    .image-section {
+        width: 100%;
+        height: fit-content;
+    }
+    .post-content {
+        width: 80%;
+        height: fit-content;
+    }
+}
+@media (max-width: 1200px) {
+    .image-section{
+        height: 156px ;
 
+    }
+    .titulo-post {
+        font-size: 22px;
+    }
+    .excerpt-post {
+        font-size: 14px;
+    }
+    .flecha {
+        margin-right: 20px;
+
+    }
+    .link-flecha {
+        margin-top: 134px;
+        margin-bottom: 32px;
+    }
+}
+@media (max-width: 768px) {
+
+    .image-section {
+        width:100%;
+        height: fit-content;
+    }
+    .link-flecha {
+        margin-top: 184px;
+        margin-bottom: 32px;
+    }
+    .flecha {
+        margin-right: 40px;
+        width: 32px;
+        height: 22px
+
+    }
+    .imagendestacada img {
+        width: 36px;
+        height: 36px;
+        margin: 4px 4px 4px 4px;
+    }
+    .imagendestacada {
+        width: 56px;
+        height: 36px;
+    }
+}
+@media (max-width: 507px) {
+    .image-section {
+        display: block;
+        text-align: -webkit-center;
+    }
+    .imagendestacada {
+        margin-top: 25px;
+    }
+    .link-flecha {
+        margin-top: 14px;
+        margin-bottom: 25px;
+    }
+    .post-content {
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+    .titulo-post {
+        text-align: center;
+    }
+    .flecha {
+        margin-right: 0px;
+    }
+}
