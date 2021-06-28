@@ -13,7 +13,7 @@ $args = array(
 );
 $the_query = new WP_Query( $args );
 ?>
-<div class="container text-center">
+<div class="container noticias" style= "margin-top: 100px !important; width: 100%">
     <?php if($the_query->have_posts() ) :
 while ( $the_query->have_posts() ) :
 $the_query->the_post();?>
