@@ -176,6 +176,7 @@ body p{
     flex-wrap: wrap;
     border: none;
     height: 100%;
+    justify-content: center;
 }
 .app .card .item {
     width: 115px;
@@ -201,6 +202,12 @@ body p{
     color: #021B5E;
 }
 
+.carousel-indicators .active{
+    background-color: #021B5E;
+}
+ol.carousel-indicators li {
+    background-color: #8BDDFC;
+}
 
 .container {
      margin-top: 100px;
@@ -208,6 +215,18 @@ body p{
      margin-right: auto !important;
 }
 
+@media only screen and (max-width: 600px) {
+    .app .card .item {
+        width: 80px;
+        height: 80px;
+        padding: 10px;
+        
+    }
+    .app .card .item .img-ico {
+        width: 45px !important;
+        margin-bottom: 0;
+    }
+}
 .image-section {
     display: flex;
     justify-content: left;

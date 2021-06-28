@@ -1,36 +1,58 @@
     <section class="container app mt-5 row">
-        <div class="slider col-lg-6"> 
+        <div class="slider col-lg-6 mb-3"> 
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        
             <div class="carousel-inner">
-                <?php
-                $active="active";
-                $count=0;
-                if(get_field("slider-home")){
-                    foreach (get_field("slider-home") as $item) {?>
-            <div class="carousel-item <?php if($count == 0) {
-                echo $active;
-                }?>">
-                <h2><?php echo $item["titulo-slider"]?></h2>
-                <p><?php echo $item["contenido-slider"]?></p>
-                <img class="d-block w-100" src="<?php echo $item["imagen-slider"]?>" alt="First slide" style="border-radius:1px">
-            </div>
-                <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators<?php $count ?>" data-slide-to="<?php $count ?>" class="<?php if($count == 0) { echo $active; }?>" style="width:5px; height:5px;border-radius:50%"></li>
-                </ol>
-                <?php $count ++;}} ?>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators<?php $count ?>" role="button" data-slide="prev">
+            <?php
+                function feed($feedURL){
+                $i = 0; 
+                $url = $feedURL; 
+                $rss = simplexml_load_file($url);
+                $cant = (count($rss->channel->item));
+                 
+                    foreach($rss->channel->item as $item) { 
+                    $link = $item->link;  //extrae el link
+                    $title = $item->title;  //extrae el titulo
+                    $guid = $item->guid;
+                    $description = strip_tags($item->description);?>
+                    
+                    <?php if ($i < 21) {?>
+                        
+                        <div class="carousel-item<?php if($i == 0) { echo ' active'; }?>">
+                            
+                                <h2><a href="<?php echo $link ?>" target="_blank"><?php echo $title ?></a></h2>
+                                <p><?php echo $description ?></p>
+                                <img src="<?php echo $guid ?>" alt="">
+                                
+                            
+                        </div>
+                            
+                    <?php } 
+                        $i++;
+                    } ?>
+
+                    <ol class="carousel-indicators">
+                    <?php 
+                    for ( $i=0; $i<$cant; $i++) { ?>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="<?php $i ?>" class="<?php if($i == 0) {echo 'active';}?>" style="width:7px; height:7px; border-radius:50%; color: #8BDDFC"></li>
+                    <?php } ?>
+                    </ol>
+
+                <?php  }?>
+                
+                <?php feed("https://lucanova.sanlucar.com/feed") ?>
+                
+            </div>   
+            
+            
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
             <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
-            </a>
-
-            
-        </div>
+            </a>  
+            </div> 
         </div>
 
         <div class="card col-lg-6 text-center">
@@ -51,5 +73,12 @@
             
         </div>
     </section>
-    
-  
+
+
+
+<div class="col-6">  
+
+</div>        
+
+
+
