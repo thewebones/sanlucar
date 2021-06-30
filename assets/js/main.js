@@ -2,9 +2,20 @@
  * Created by pompi on 23/06/21.
  */
  const url=document.location.href;
+
+ const urlMenu=document.getElementsByClassName("itemMenu")[0].children[0].href;
+ const divItem=document.getElementsByClassName("itemMenu"); 
  
- document.getElementsByClassName("imagenMenu")[0].children[0].href; 
-  
+ for(let i=0;i<divItem.length;i++){
+   if(divItem[i].children[1].children[0].href===url){
+   divItem[i].classList.add("itemMenuActivo");
+   divItem[i].children[1].children[0].children[0].classList.add("ocultar");  
+   divItem[i].children[1].children[0].children[1].classList.add("mostrar");    
+   divItem[i].children[0].classList.add("ocultar");
+   }
+ } 
+ 
+ 
  const ocultar=(event)=>{
     if(!event.currentTarget.children[0].children[0].classList.contains("ocultar")){
         event.currentTarget.children[0].children[0].classList.add("ocultar");

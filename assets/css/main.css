@@ -115,12 +115,18 @@ body p{
 }
 
 .itemMenuActivo{
+    pointer-events: none;
     flex-direction: column-reverse;
 }
 
-.itemMenuActivo p{
+.itemMenuActivo a{
     margin-bottom: 10px;
     margin-top: 0 !important;
+}
+.itemMenuActivo .imagenMenu{
+    background:#021B5E;
+    box-shadow: 0 10px 40px 0 #8BDDFC;
+    border-radius: 10px;
 }
 
 .docsContainer{
@@ -195,9 +201,6 @@ body p{
     font-weight: bold;
 }
 
-.descriptionDoc{
-    color: gray;
-}
 .app {
     margin-left: auto !important;
     margin-right: auto !important;

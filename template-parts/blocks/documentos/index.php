@@ -24,7 +24,7 @@ $the_query = new WP_Query( $args );
 
 $argsCategorias=array(
   'taxonomy'=>'category',
-  'order'=>'ASC' 
+  'order'=>'DESC' 
 );
 $cats=get_categories($argsCategorias);
 
