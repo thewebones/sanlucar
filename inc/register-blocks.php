@@ -48,4 +48,13 @@ acf_register_block_type(array(
     'category' => 'widgets'
 
 ));
+acf_register_block_type(array(
+    'name'              => 'services-section',
+    'title'             => __('services section'),
+    'description'       => __('noticias'),
+    'render_template'   => 'template-parts/blocks/services/index.php',
+    'icon'              => 'admin-comments',
+    'keywords'          => array('services', 'seccion'),
+    'category' => 'widgets'
+));
 

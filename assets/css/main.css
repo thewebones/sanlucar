@@ -213,6 +213,7 @@ body p{
     flex-wrap: wrap;
     border: none;
     height: 100%;
+    justify-content: center;
 }
 .app .card .item {
     width: 115px;
@@ -238,13 +239,36 @@ body p{
     color: #021B5E;
 }
 
+.carousel-indicators .active{
+    background-color: #021B5E;
+}
+.carousel-control-next span, .carousel-control-prev span{
+    margin-top: 100px !important;
+    background-color: #575a6291;
+    
+}
+ol.carousel-indicators li {
+    background-color: #8BDDFC;
+}
 
-.container {
+.noticias {
      margin-top: 100px;
      margin-left: auto !important;
      margin-right: auto !important;
 }
 
+@media only screen and (max-width: 600px) {
+    .app .card .item {
+        width: 80px;
+        height: 80px;
+        padding: 10px;
+        
+    }
+    .app .card .item .img-ico {
+        width: 45px !important;
+        margin-bottom: 0;
+    }
+}
 .image-section {
     display: flex;
     justify-content: left;
@@ -279,8 +303,9 @@ body p{
     font-size: 24px;
     font-family: "Helvetica Neue";
     letter-spacing: 0.75px;
-    line-height: 12px;
+    line-height: 20px;
     font-weight: 900;
+    text-align: left;
 }
 .excerpt-post {
     font-size: 16px;
@@ -389,4 +414,173 @@ body p{
     margin-bottom: 32px;
 }
 
+@media (max-width: 1223px) {
+    .image-section {
+        width: 100%;
+        height: fit-content;
+    }
+    .post-content {
+        width: 80%;
+        height: fit-content;
+    }
+}
+@media (max-width: 1200px) {
+    .image-section{
+        height: 156px ;
+
+    }
+    .titulo-post {
+        font-size: 22px;
+    }
+    .excerpt-post {
+        font-size: 14px;
+    }
+    .flecha {
+        margin-right: 20px;
+
+    }
+    .link-flecha {
+        margin-top: 134px;
+        margin-bottom: 32px;
+    }
+}
+@media (max-width: 768px) {
+
+    .image-section {
+        width:100%;
+        height: fit-content;
+    }
+    .link-flecha {
+        margin-top: 184px;
+        margin-bottom: 32px;
+    }
+    .flecha {
+        margin-right: 40px;
+        width: 32px;
+        height: 22px
+
+    }
+    .imagendestacada img {
+        width: 36px;
+        height: 36px;
+        margin: 4px 4px 4px 4px;
+    }
+    .imagendestacada {
+        width: 56px;
+        height: 36px;
+    }
+}
+@media (max-width: 507px) {
+    .image-section {
+        display: block;
+        text-align: -webkit-center;
+    }
+    .imagendestacada {
+        margin-top: 25px;
+    }
+    .link-flecha {
+        margin-top: 14px;
+        margin-bottom: 25px;
+    }
+    .post-content {
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+    .titulo-post {
+        text-align: center;
+    }
+    .flecha {
+        margin-right: 0px;
+    }
+}
+
+.service{
+    color: black;
+
+}
+.foodservice h1{
+    font-family: "Helvetica Neue";
+    font-size: 36px;
+    color: #FFFFFF;
+    letter-spacing: 1.12px;
+    border-bottom: solid;
+    color: white;
+    border-width: 2px;
+    margin-bottom: 130px;
+    margin-top: 100px;
+
+}
+.serviceblock {
+    text-align: left;
+    background: white;
+    height: 227px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    z-index: 0;
+}
+.imagen {
+    z-index: 1;
+    text-align: center;
+    background: #8BDDFC ;
+    width: 76px;
+    height: 76px;
+    border-radius: 10px;
+    margin-bottom: -45px;
+    position: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.imagenservice {
+    text-align: -webkit-center;
+    padding-bottom: 50px;
+
+}
+.tituloservice h1{
+    padding-top: 60px;
+    margin-bottom: 15px;
+    font-family: "Helvetica Neue";
+    font-size: 24px;
+    color: #021B5E;
+    letter-spacing: 0.75px;
+    line-height: 12px;
+}
+.servicecontent p {
+    font-family: Ubuntu-Regular;
+    font-size: 16px;
+    color: #575A62;
+    letter-spacing: 0.5px;
+    line-height: 24px;
+}
+.serviceboton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 53px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: #8BDDFC;
+}
+.titulo {
+    width: 100%;
+    height: 53px; display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.botontitulo {
+    font-family: Ubuntu-Bold;
+    font-weight: bold;
+    font-size: 16px;
+    color: #021B5E;
+    letter-spacing: 0.5px;
+    text-align: center;
+    line-height: 13px;
+}
+.serviceboton:hover {
+    background: #021B5E;
+    cursor: pointer;
+}
+.serviceboton:hover h1{
+    color: white;
+}
 
