@@ -13,6 +13,9 @@
                     $link = $item->link;  //extrae el link
                     $title = $item->title;  //extrae el titulo
                     $guid = $item->guid;
+                    $des_pure=$item->description;
+                    $aux=explode('src="',$des_pure)[1];
+                    $src=explode('" class',$aux)[0];
                     $description = strip_tags($item->description);?>
                     
                     <?php if ($i < 21) {?>
@@ -21,7 +24,7 @@
                             
                                 <h2><a href="<?php echo $link ?>" target="_blank"><?php echo $title ?></a></h2>
                                 <p><?php echo $description ?></p>
-                                <img src="<?php echo $guid ?>" alt="">
+                                <img src="<?php echo $src ?>" alt="">
                                 
                             
                         </div>
