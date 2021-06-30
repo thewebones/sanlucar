@@ -23,8 +23,8 @@
                         <div class="carousel-item<?php if($i == 0) { echo ' active'; }?>">
                             
                                 <h2><a href="<?php echo $link ?>" target="_blank"><?php echo $title ?></a></h2>
-                                <p><?php echo $description ?></p>
-                                <img src="<?php echo $src ?>" alt="" style="width: 500px; height: 420px; objet-fit: cover">
+                                <p style="margin-bottom: 20px"><?php echo $description ?></p>
+                                <img src="<?php echo $src ?>" alt="" style="width: 521px; height: 445px; border-radius:10px; objet-fit: cover">
                                 
                             
                         </div>
@@ -40,7 +40,7 @@
                     <?php } ?>
                     </ol>
 
-                <?php  }?>
+                <?php  } ?>
                 
                 <?php feed("https://lucanova.sanlucar.com/feed") ?>
                 
@@ -76,12 +76,7 @@
             
         </div>
     </section>
-
-
-
-<div class="col-6">  
-
-</div>        
+      
 
 
 

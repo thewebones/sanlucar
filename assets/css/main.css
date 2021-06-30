@@ -239,6 +239,11 @@ body p{
 .carousel-indicators .active{
     background-color: #021B5E;
 }
+.carousel-control-next span, .carousel-control-prev span{
+    margin-top: 100px !important;
+    background-color: #575a6291;
+    
+}
 ol.carousel-indicators li {
     background-color: #8BDDFC;
 }
