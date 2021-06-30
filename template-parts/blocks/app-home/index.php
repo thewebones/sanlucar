@@ -24,7 +24,7 @@
                             
                                 <h2><a href="<?php echo $link ?>" target="_blank"><?php echo $title ?></a></h2>
                                 <p><?php echo $description ?></p>
-                                <img src="<?php echo $src ?>" alt="">
+                                <img src="<?php echo $src ?>" alt="" style="width: 500px; height: 420px; objet-fit: cover">
                                 
                             
                         </div>
