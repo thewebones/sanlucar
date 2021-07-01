@@ -24,7 +24,7 @@
                             
                                 <h2><a href="<?php echo $link ?>" target="_blank"><?php echo $title ?></a></h2>
                                 <p style="margin-bottom: 20px"><?php echo $description ?></p>
-                                <img class="img-fluid" src="<?php echo $src ?>" alt="" style="width: 521px; height: 445px; border-radius:10px; objet-fit: cover">
+                                <img class="img-slider img-fluid" src="<?php echo $src ?>" alt="" style="width: 521px; height: 445px; border-radius:10px; objet-fit: cover">
                                 
                             
                         </div>

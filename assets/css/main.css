@@ -256,6 +256,23 @@ ol.carousel-indicators li {
      margin-right: auto !important;
 }
 
+.img-slider {
+    text-align: center !important;
+    margin-bottom: 50px !important;
+}
+.carousel-indicators {
+    bottom: -10px !important;
+}
+@media (min-width: 767px) and (max-width: 991px) {
+    .slider {
+        text-align: center !important;
+    }
+    .carousel-control-next, .carousel-control-prev {
+        width: 30%;
+    }
+}
+
+
 @media only screen and (max-width: 600px) {
     .app .card .item {
         width: 95px;
@@ -273,6 +290,9 @@ ol.carousel-indicators li {
     }
     .app .slider {
         text-align: center;
+    }
+    .img-slider {
+        height: 350px !important;
     }
 }
 .image-section {
