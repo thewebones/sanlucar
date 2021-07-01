@@ -258,14 +258,18 @@ ol.carousel-indicators li {
 
 @media only screen and (max-width: 600px) {
     .app .card .item {
-        width: 90px;
-        height: 90px;
+        width: 95px;
+        height: 95px;
+        text-align: center;
         padding: 10px;
-        font-size: 12px;
+        
         
     }
     .app .card .item .img-ico {
         margin-bottom: 0;
+    }
+    .app .card .item .item-nombre {
+        font-size: 14px;
     }
     .app .slider {
         text-align: center;
