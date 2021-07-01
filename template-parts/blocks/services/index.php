@@ -5,20 +5,36 @@
  * Date: 6/28/2021
  * Time: 9:47 AM
  */
-?>
-<?php
-$args = array(
-    'post_type'=> 'servicios',
-    'order'    => 'ASC'
+$argsCategorias=array(
+    'taxonomy'=>'category',
+    'order'=>'ASC',
+    'hide_empty' => true,
 );
-$the_query = new WP_Query( $args );
+$cats=get_categories($argsCategorias);
+
 ?>
 
 <section class="container service" style="background: blue; width: 100%">
+
+    <?php foreach($cats as $index=>$cat) {
+
+
+        $args = array(
+            'post_type'=> 'servicios',
+            'order'    => 'ASC',
+            'category_name'=> $cat->name
+        );
+        $the_query = new WP_Query( $args );
+
+        if($the_query->posts){
+        ?>
+
+
+
     <div class="foodservice">
-        <h1>Food Service</h1>
+        <h1><?php echo $cat->name?></h1>
     </div>
-    <div class="services-section__grid" style="display: flex; flex-wrap: wrap">
+    <div class="services-section__grid" style="display: flex; flex-wrap: wrap; margin-top: 8%">
  <?php if($the_query->have_posts() ) :
     while ( $the_query->have_posts() ) :
     $the_query->the_post();?>
@@ -38,18 +54,19 @@ $the_query = new WP_Query( $args );
         </div>
         <div class="serviceboton">
             <div class="titulo">
+                <a class="botontitulo" href="<?php echo get_post_meta( get_the_ID(),'boton', true)['url']?>">
             <h1 class="botontitulo"><?php echo get_post_meta( get_the_ID(), 'titulo_boton', true );?></h1>
+                </a>
             </div>
-            <div>
-            <a class="boton" href="<?php echo get_post_meta("boton")["link"]?>"></a>
-            </div>
+
         </div>
     </div>
         <?php
     endwhile;
      wp_reset_postdata();
- else:
+
  endif;
  ?>
     </div>
+    <?php } } ?>
 </section>

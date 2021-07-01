@@ -28,7 +28,7 @@ body p{
     font-size: 16px;
     letter-spacing: 0.5px;
     margin-right: 30px;
-    }
+}
 
 .logoContainer{
     background:#F0FFFF;
@@ -36,7 +36,7 @@ body p{
     height: 67px;
     display: flex;
     justify-content: center;
-}    
+}
 .imgLogo{
     width:146px;
     height:73px;
@@ -72,7 +72,7 @@ body p{
     align-items: center;
     position:absolute;
     top:-2%;
-    right:13%;   
+    right:13%;
 }
 .notify span{
     color:white;
@@ -98,7 +98,7 @@ body p{
 .mostrar{
     display:block;
 }
-.imagenMenu:hover{ 
+.imagenMenu:hover{
     background:#021B5E;
     box-shadow: 0 10px 40px 0 #8BDDFC;
     border-radius: 10px;
@@ -201,6 +201,9 @@ body p{
     font-weight: bold;
 }
 
+.descriptionDoc{
+    color: gray;
+}
 .app {
     margin-left: auto !important;
     margin-right: auto !important;
@@ -233,7 +236,7 @@ body p{
 }
 .app .card .item:hover {
     background-color: #021B5E;
-} 
+}
 .app .card .item .item-nombre {
     font-weight: 600;
     color: #021B5E;
@@ -245,15 +248,16 @@ body p{
 .carousel-control-next span, .carousel-control-prev span{
     margin-top: 100px !important;
     background-color: #575a6291;
+    
 }
 ol.carousel-indicators li {
     background-color: #8BDDFC;
 }
 
 .noticias {
-     margin-top: 100px;
-     margin-left: auto !important;
-     margin-right: auto !important;
+    margin-top: 100px;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 
 .img-slider {
@@ -279,10 +283,11 @@ ol.carousel-indicators li {
         height: 95px;
         text-align: center;
         padding: 10px;
-        
-        
+
+
     }
     .app .card .item .img-ico {
+        width: 45px !important;
         margin-bottom: 0;
     }
     .app .card .item .item-nombre {
@@ -339,6 +344,7 @@ ol.carousel-indicators li {
     letter-spacing: 0.5px;
     line-height: 24px;
     margin-top: 15px;
+    text-align: left;
 }
 .flecha {
     width: 42px;
@@ -346,9 +352,9 @@ ol.carousel-indicators li {
 }
 
 @media (max-width:1256px){
-.allDocs .singleDocs{
-    margin: 0 0 20px 0 !important;
-}
+    .allDocs .singleDocs{
+        margin: 0 0 20px 0 !important;
+    }
 }
 
 @media (max-width:730px){
@@ -357,7 +363,7 @@ ol.carousel-indicators li {
         height:80px ;
     }
     .notify{
-       right:7% ;
+        right:7% ;
     }
     .textoMenu{
         width:min-content;
@@ -378,7 +384,7 @@ ol.carousel-indicators li {
         width:100px;
         height:auto;
     }
-    
+
     .imagenMenu{
         width:50px ;
         height:50px ;
@@ -388,9 +394,9 @@ ol.carousel-indicators li {
         height:30px;
     }
     .notify{
-       right:17%;
-       height:20px;
-       width:20px;
+        right:17%;
+        height:20px;
+        width:20px;
     }
     .textoMenu{
         font-size:10px ;
@@ -434,6 +440,7 @@ ol.carousel-indicators li {
     .classNotFound{
         font-size: 10px;
     }
+
 }
 .link-flecha {
     margin-top: 104px;
@@ -515,6 +522,9 @@ ol.carousel-indicators li {
     .titulo-post {
         text-align: center;
     }
+    .excerpt-post {
+        text-align: center;
+    }
     .flecha {
         margin-right: 0px;
     }
@@ -532,8 +542,10 @@ ol.carousel-indicators li {
     border-bottom: solid;
     color: white;
     border-width: 2px;
-    margin-bottom: 130px;
-    margin-top: 100px;
+    margin-bottom: 8%;
+    margin-top: 8%;
+    margin-left: 20px;
+    margin-right: 20px;
 
 }
 .serviceblock {
@@ -569,7 +581,7 @@ ol.carousel-indicators li {
     font-size: 24px;
     color: #021B5E;
     letter-spacing: 0.75px;
-    line-height: 12px;
+    line-height: 20px;
 }
 .servicecontent p {
     font-family: Ubuntu-Regular;
@@ -600,7 +612,7 @@ ol.carousel-indicators li {
     color: #021B5E;
     letter-spacing: 0.5px;
     text-align: center;
-    line-height: 13px;
+    line-height: 18px;
 }
 .serviceboton:hover {
     background: #021B5E;
@@ -608,5 +620,41 @@ ol.carousel-indicators li {
 }
 .serviceboton:hover h1{
     color: white;
+
+}
+.botontitulo:hover {
+    text-decoration: none;
+}
+.image-section__image {
+    width: 42px;
+    height: 36px;
+}
+@media (max-width: 730px) {
+    .foodservice h1 {
+        font-size: 31px;
+    }
+    .imagen {
+        width: 66px;
+        height: 66px;
+    }
+}
+@media (max-width: 500px) {
+    .foodservice h1 {
+        font-size: 28px;
+    }
+    .imagen {
+        width: 56px;
+        height: 56px;
+        margin-bottom: -35px;
+    }
+    .tituloservice h1 {
+        font-size: 20px;
+    }
+    .botontitulo {
+        font-size: 13px;
+    }
+    .servicecontent p {
+        font-size: 13px;
+    }
 }
 
