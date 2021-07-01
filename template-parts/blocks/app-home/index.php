@@ -24,7 +24,7 @@
                             
                                 <h2><a href="<?php echo $link ?>" target="_blank"><?php echo $title ?></a></h2>
                                 <p style="margin-bottom: 20px"><?php echo $description ?></p>
-                                <img src="<?php echo $src ?>" alt="" style="width: 521px; height: 445px; border-radius:10px; objet-fit: cover">
+                                <img class="img-fluid" src="<?php echo $src ?>" alt="" style="width: 521px; height: 445px; border-radius:10px; objet-fit: cover">
                                 
                             
                         </div>
@@ -64,10 +64,10 @@
             $count = 1;
                 if(get_field("repeater-home")){
                 foreach (get_field("repeater-home") as $item) {?>
-                    <div class="item" id="item-<?php echo $count ?>">
+                    <div class="item text-center" id="item-<?php echo $count ?>">
                         <a class="item-enlace" href="<?php echo $item["enlace-card"]?>" target="blank">
-                            <div id="img-ico-<?php echo $count ?>" class="img-ico text-center" style="background-image: url('<?php echo $item["ico-card"] ?>'); height:50px; width:75px; background-repeat: no-repeat;  background-position: center top"></div>
-                            <div id="img-icohover-<?php echo $count ?>" class="img-icohover text-center" style="background-image: url('<?php echo $item["ico-card_hover"] ?>'); height:50px; width:75px; background-repeat: no-repeat;  background-position: center top"></div>
+                            <div id="img-ico-<?php echo $count ?>" class="img-ico text-center" style="background-image: url('<?php echo $item["ico-card"] ?>'); height:50px; width:75px; background-repeat: no-repeat;  background-position: center "></div>
+                            <div id="img-icohover-<?php echo $count ?>" class="img-icohover text-center" style="background-image: url('<?php echo $item["ico-card_hover"] ?>'); height:50px; width:75px; background-repeat: no-repeat;  background-position: center"></div>
                             <h6 id="item-nombre-<?php echo $count ?>" class="item-nombre mb-3"><?php echo $item["nombre-card"] ?></h6>
                         </a>
                     </div>

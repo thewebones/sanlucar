@@ -242,7 +242,6 @@ body p{
 .carousel-control-next span, .carousel-control-prev span{
     margin-top: 100px !important;
     background-color: #575a6291;
-    
 }
 ol.carousel-indicators li {
     background-color: #8BDDFC;
@@ -256,14 +255,17 @@ ol.carousel-indicators li {
 
 @media only screen and (max-width: 600px) {
     .app .card .item {
-        width: 80px;
-        height: 80px;
+        width: 90px;
+        height: 90px;
         padding: 10px;
+        font-size: 12px;
         
     }
     .app .card .item .img-ico {
-        width: 45px !important;
         margin-bottom: 0;
+    }
+    .app .slider {
+        text-align: center;
     }
 }
 .image-section {
