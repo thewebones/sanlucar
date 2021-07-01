@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd7a1e47-9f54-4baa-a7fb-c5ffc7bb7512" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template-parts/blocks/alertas-section/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/main.css" afterPath="$PROJECT_DIR$/assets/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/register-blocks.php" afterPath="$PROJECT_DIR$/inc/register-blocks.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template-parts/blocks/services/index.php" afterPath="$PROJECT_DIR$/template-parts/blocks/services/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -45,8 +42,8 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="647" column="29" lean-forward="true" selection-start-line="647" selection-start-column="29" selection-end-line="647" selection-end-column="29" />
+            <state relative-caret-position="258">
+              <caret line="505" column="27" lean-forward="true" selection-start-line="505" selection-start-column="27" selection-end-line="505" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -129,6 +126,7 @@
     <findStrings>
       <find>contai</find>
       <find>.imagendestacada</find>
+      <find>imagen</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -510,7 +508,7 @@
       <workItem from="1624482258525" duration="447000" />
       <workItem from="1624490272539" duration="10618000" />
       <workItem from="1624546396054" duration="42864000" />
-      <workItem from="1624919718958" duration="27001000" />
+      <workItem from="1624919718958" duration="27353000" />
     </task>
     <task id="LOCAL-00001" summary="cpt">
       <created>1624314141918</created>
@@ -561,11 +559,18 @@
       <option name="project" value="LOCAL" />
       <updated>1624921457029</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="alertas arreglos">
+      <created>1625181612593</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1625181612593</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85279000" />
+    <option name="totallyTimeSpent" value="85631000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1380" height="735" extended-state="0" />
@@ -604,7 +609,8 @@
     <MESSAGE value="noticias" />
     <MESSAGE value=" responsive noticias" />
     <MESSAGE value="services" />
-    <option name="LAST_COMMIT_MESSAGE" value="services" />
+    <MESSAGE value="alertas arreglos" />
+    <option name="LAST_COMMIT_MESSAGE" value="alertas arreglos" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1053,8 +1059,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="647" column="29" lean-forward="true" selection-start-line="647" selection-start-column="29" selection-end-line="647" selection-end-column="29" />
+        <state relative-caret-position="258">
+          <caret line="505" column="27" lean-forward="true" selection-start-line="505" selection-start-column="27" selection-end-line="505" selection-end-column="27" />
           <folding />
         </state>
       </provider>
