@@ -57,4 +57,15 @@ acf_register_block_type(array(
     'keywords'          => array('services', 'seccion'),
     'category' => 'widgets'
 ));
+acf_register_block_type(array(
+    'name'              => 'alertas-section',
+    'title'             => __('alertas section'),
+    'description'       => __('alertas'),
+    'render_template'   => 'template-parts/blocks/alertas-section/index.php',
+    'icon'              => 'admin-comments',
+    'keywords'          => array('alertas', 'seccion'),
+    'category' => 'widgets'
+));
+
+
 

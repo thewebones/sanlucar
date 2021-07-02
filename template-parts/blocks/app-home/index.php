@@ -1,11 +1,14 @@
     <section class="container app mt-5 row">
         <div class="slider col-lg-6 mb-3"> 
+        <div class="titulo">
+            <h2>LucaNova</h2>
+        </div>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
             <?php
-                function feed($feedURL){
+                
                 $i = 0; 
-                $url = $feedURL; 
+                $url = "https://lucanova.sanlucar.com/feed"; 
                 $rss = simplexml_load_file($url);
                 $cant = (count($rss->channel->item));
                  
@@ -22,14 +25,16 @@
                         
                         <div class="carousel-item<?php if($i == 0) { echo ' active'; }?>">
                             
-                                <h2><a href="<?php echo $link ?>" target="_blank"><?php echo $title ?></a></h2>
-                                <p style="margin-bottom: 20px"><?php echo $description ?></p>
-                                <img src="<?php echo $src ?>" alt="" style="width: 521px; height: 445px; border-radius:10px; objet-fit: cover">
+                                <span><?php echo $title ?></span>
+                                <p style="margin-bottom: 10px"><?php echo $description ?></p>
+                                <h6 style="margin-bottom: 20px"><a href="<?php echo $link ?>" target="_blank">Read more ></a></h6>
+                                <img class="img-slider img-fluid" src="<?php echo $src ?>" alt="" style="width: 521px; height: 445px; border-radius:10px; objet-fit: cover">
+                                
                                 
                             
                         </div>
                             
-                    <?php } 
+                    <?php }
                         $i++;
                     } ?>
 
@@ -40,9 +45,9 @@
                     <?php } ?>
                     </ol>
 
-                <?php  } ?>
+               
                 
-                <?php feed("https://lucanova.sanlucar.com/feed") ?>
+              
                 
             </div>   
             
@@ -64,10 +69,10 @@
             $count = 1;
                 if(get_field("repeater-home")){
                 foreach (get_field("repeater-home") as $item) {?>
-                    <div class="item" id="item-<?php echo $count ?>">
+                    <div class="item text-center" id="item-<?php echo $count ?>">
                         <a class="item-enlace" href="<?php echo $item["enlace-card"]?>" target="blank">
-                            <div id="img-ico-<?php echo $count ?>" class="img-ico text-center" style="background-image: url('<?php echo $item["ico-card"] ?>'); height:50px; width:75px; background-repeat: no-repeat;  background-position: center top"></div>
-                            <div id="img-icohover-<?php echo $count ?>" class="img-icohover text-center" style="background-image: url('<?php echo $item["ico-card_hover"] ?>'); height:50px; width:75px; background-repeat: no-repeat;  background-position: center top"></div>
+                            <div id="img-ico-<?php echo $count ?>" class="img-ico text-center" style="background-image: url('<?php echo $item["ico-card"] ?>'); height:50px; width:75px; background-repeat: no-repeat;  background-position: center "></div>
+                            <div id="img-icohover-<?php echo $count ?>" class="img-icohover text-center" style="background-image: url('<?php echo $item["ico-card_hover"] ?>'); height:50px; width:75px; background-repeat: no-repeat;  background-position: center"></div>
                             <h6 id="item-nombre-<?php echo $count ?>" class="item-nombre mb-3"><?php echo $item["nombre-card"] ?></h6>
                         </a>
                     </div>
@@ -76,7 +81,3 @@
             
         </div>
     </section>
-      
-
-
-
