@@ -44,9 +44,9 @@
 				<?php if(get_field("repeater_menu_principal","option")) 
 				foreach(get_field("repeater_menu_principal","option") as $item){
 				?>
-				<div class="itemMenu"   >
+				<div class="itemMenu" >
 					<div class="<?php if($item["enlace_item_menu"]["title"]==="ALERTAS") echo "notify"?>"><span><?php if($item["enlace_item_menu"]["title"]==="ALERTAS") echo 1?></span></div>
-					<div onMouseOut="mostrar(event)" onMouseOver="ocultar(event)" class="imagenMenu">
+					<div onMouseOut="mostrar(event)" onClick="goLink(event)" onMouseOver="ocultar(event)" class="imagenMenu">
 						<a class="link" href="<?php echo $item["enlace_item_menu"]["url"]?>">
 						<img class="front" src="<?php echo $item["icono_item_menu"]?>"/>
 						<img class="back" src="<?php echo $item["icono_item_menu_hover"]?>"/>

@@ -1,9 +1,11 @@
 
 <?php
 
-$catSelect=$_POST['categoria'];
-if(!$catSelect)
+
+if(!isset($_POST['categoria'])){
 $catSelect="all";
+}
+else $catSelect=$_POST['categoria'];
 
 $args=0;
 if($catSelect==="all"){
@@ -24,7 +26,7 @@ $the_query = new WP_Query( $args );
 
 $argsCategorias=array(
   'taxonomy'=>'category',
-  'order'=>'DESC' 
+  'order'=>'ASC' 
 );
 $cats=get_categories($argsCategorias);
 
@@ -36,7 +38,7 @@ $cats=get_categories($argsCategorias);
     <div class="searchContainer">
         <form class="selectContainer" action="" method="post">
             <label class="textSearch">Select a department</label>
-            <select class="selectSearch" onChange="submitForm()" name="categoria" >
+            <select class="selectSearch" onChange="submitForm(event)" onClick="select(event)" name="categoria" >
                  <?php if($catSelect==="all"){
                     ?>
                     <option value="all">all</option>
@@ -63,13 +65,15 @@ $cats=get_categories($argsCategorias);
                
         ?>
             
-            <div class="singleDocs"  onClick="goLink(event)">
+            <div class="singleDocs" onClick="goLink(event)">
             <?php if($aux) {?>
             <a href="<?php echo $aux["url"] ?>"></a>
             <?php } ?>
+            <div>
 			<div class="iconDoc">  
 				<?php the_post_thumbnail();?>
 			</div>
+            </div>
 			<div class="textContainer">
                 <h1 class="tituloDoc"><?php echo the_title() ?></h1>
                 <p class="descriptionDoc"><?php echo get_the_excerpt() ?></p>

@@ -128,10 +128,14 @@ body p{
     flex-direction: column-reverse;
 }
 
-.itemMenuActivo a{
-    margin-bottom: 10px;
+.itemMenuActivo .link{
     margin-top: 0 !important;
 }
+.itemMenuActivo .textoMenu{
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
 .itemMenuActivo .imagenMenu{
     background:#021B5E;
     box-shadow: 0 10px 40px 0 #8BDDFC;
@@ -184,14 +188,14 @@ body p{
 .allDocs .singleDocs:nth-child(2n+1){
     margin: 0 30px 0 0;
 }
-.singleDocs{
-    width:560px;
+.singleDocs {
     height:136px;
     background:#8BDDFC;
     display: flex;
     align-items: center;
     margin-bottom:20px;
     cursor: pointer;
+    padding-right: 10px;
 }
 
 .iconDoc{
@@ -212,7 +216,12 @@ body p{
 
 .descriptionDoc{
     color: gray;
+    text-align: justify;
 }
+.classNotFound{
+    color:white;
+}
+
 .app {
     margin-left: auto !important;
     margin-right: auto !important;
@@ -401,9 +410,19 @@ ol.carousel-indicators li {
     height: 22px;
 }
 
-@media (max-width:1256px){
+
+@media (max-width:1056px){
     .allDocs .singleDocs{
         margin: 0 0 20px 0 !important;
+    }
+    .singleDocs{
+        width:80%;
+    }
+}
+
+@media (min-width:1056px){
+    .singleDocs{
+        width:40%;
     }
 }
 
@@ -426,7 +445,7 @@ ol.carousel-indicators li {
     }
 }
 
-@media (max-width:500px){
+@media (max-width:540px){
     .parrafoHeader{
         font-size: 10px;
     }
@@ -481,6 +500,10 @@ ol.carousel-indicators li {
         height:50px;
         margin:0 10px ;
     }
+    .iconDoc img{
+        width:20px;
+        height:20px;
+    }
     .tituloDoc{
         font-size: 15px;
     }
@@ -489,6 +512,7 @@ ol.carousel-indicators li {
     }
     .classNotFound{
         font-size: 10px;
+        color:white;
     }
 
 }
