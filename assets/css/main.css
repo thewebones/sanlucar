@@ -119,10 +119,14 @@ body p{
     flex-direction: column-reverse;
 }
 
-.itemMenuActivo a{
-    margin-bottom: 10px;
+.itemMenuActivo .link{
     margin-top: 0 !important;
 }
+.itemMenuActivo .textoMenu{
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
 .itemMenuActivo .imagenMenu{
     background:#021B5E;
     box-shadow: 0 10px 40px 0 #8BDDFC;
@@ -344,7 +348,7 @@ ol.carousel-indicators li {
     }
 }
 
-@media (max-width:500px){
+@media (max-width:540px){
     .parrafoHeader{
         font-size: 10px;
     }
@@ -399,6 +403,10 @@ ol.carousel-indicators li {
         height:50px;
         margin:0 10px ;
     }
+    .iconDoc img{
+        width:20px;
+        height:20px;
+    }
     .tituloDoc{
         font-size: 15px;
     }
@@ -407,6 +415,7 @@ ol.carousel-indicators li {
     }
     .classNotFound{
         font-size: 10px;
+        color:white;
     }
 }
 .link-flecha {

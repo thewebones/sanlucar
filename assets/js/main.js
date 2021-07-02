@@ -5,7 +5,10 @@
 
  const urlMenu=document.getElementsByClassName("itemMenu")[0].children[0].href;
  const divItem=document.getElementsByClassName("itemMenu"); 
- 
+ if(document.getElementsByClassName("selectSearch")[0])
+ document.getElementsByClassName("selectSearch")[0].children[0].setAttribute("hidden","");
+
+
  for(let i=0;i<divItem.length;i++){
    if(divItem[i].children[1].children[0].href===url){
    divItem[i].classList.add("itemMenuActivo");
@@ -30,7 +33,7 @@
  const submitForm=()=>{
      document.getElementsByClassName("selectContainer")[0].submit();
  }
-
+ 
  const goLink=(event)=>{
     event.currentTarget.children[0].click();
  }
