@@ -1,11 +1,14 @@
     <section class="container app mt-5 row">
         <div class="slider col-lg-6 mb-3"> 
+        <div class="titulo">
+            <h2>LucaNova</h2>
+        </div>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
             <?php
-                function feed($feedURL){
+                
                 $i = 0; 
-                $url = $feedURL; 
+                $url = "https://lucanova.sanlucar.com/feed"; 
                 $rss = simplexml_load_file($url);
                 $cant = (count($rss->channel->item));
                  
@@ -22,14 +25,16 @@
                         
                         <div class="carousel-item<?php if($i == 0) { echo ' active'; }?>">
                             
-                                <h2><a href="<?php echo $link ?>" target="_blank"><?php echo $title ?></a></h2>
-                                <p style="margin-bottom: 20px"><?php echo $description ?></p>
+                                <span><?php echo $title ?></span>
+                                <p style="margin-bottom: 10px"><?php echo $description ?></p>
+                                <h6 style="margin-bottom: 20px"><a href="<?php echo $link ?>" target="_blank">Read more ></a></h6>
                                 <img class="img-slider img-fluid" src="<?php echo $src ?>" alt="" style="width: 521px; height: 445px; border-radius:10px; objet-fit: cover">
+                                
                                 
                             
                         </div>
                             
-                    <?php } 
+                    <?php }
                         $i++;
                     } ?>
 
@@ -40,9 +45,9 @@
                     <?php } ?>
                     </ol>
 
-                <?php  } ?>
+               
                 
-                <?php feed("https://lucanova.sanlucar.com/feed") ?>
+              
                 
             </div>   
             
@@ -76,7 +81,3 @@
             
         </div>
     </section>
-      
-
-
-

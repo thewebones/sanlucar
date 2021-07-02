@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Ubuntu-Bold";
+     src: local("Ubuntu-Bold"), url(https://start.informagedevelop.com/wp-content/themes/sporcks/assets/font/Ubuntu-Bold.ttf) format("truetype");
+}
+
 *{
     margin: 0;
     padding:0;
@@ -208,6 +213,15 @@ body p{
     border-radius: 10px;
     background-color: #fff;
 }
+.app .slider .titulo {
+    justify-content: flex-start;
+}
+.app .slider .titulo h2 {
+    font-size: 36px;
+    font-family: 'Helvetica';
+    color: #021B5E;
+
+}
 .app .card {
     flex-direction: inherit;
     flex-wrap: wrap;
@@ -239,6 +253,7 @@ body p{
     color: #021B5E;
 }
 
+
 .carousel-indicators .active{
     background-color: #021B5E;
 }
@@ -263,6 +278,25 @@ ol.carousel-indicators li {
 .carousel-indicators {
     bottom: -10px !important;
 }
+.app .slider .carousel-inner a {
+    color: #021B5E  !important;
+    text-decoration: none;
+    font-family: 'Ubuntu-Bold';
+} 
+.app .slider .carousel-inner span {
+    color: #575A62 !important;
+    font-family: 'Ubuntu-Bold';
+}
+.app .slider .carousel-inner p {
+    color: #575A62 !important;
+    font-size: 16px;
+    font-family: 'Ubuntu-Regular';
+}
+.app .slider .carousel-inner h6 {
+    color: #021B5E !important;
+    font-size: 16px;
+    font-family: 'Ubuntu-Bold';
+}
 @media (min-width: 767px) and (max-width: 991px) {
     .slider {
         text-align: center !important;
@@ -270,6 +304,10 @@ ol.carousel-indicators li {
     .carousel-control-next, .carousel-control-prev {
         width: 30%;
     }
+    .app .slider .titulo {
+        justify-content: center !important;
+        }
+    
 }
 
 
@@ -294,6 +332,10 @@ ol.carousel-indicators li {
     .img-slider {
         height: 350px !important;
     }
+    .app .slider .titulo {
+        justify-content: center !important;
+        }
+
 }
 .image-section {
     display: flex;
@@ -301,11 +343,15 @@ ol.carousel-indicators li {
     align-items: center;
     border: solid #8BDDFC 4px;
     border-radius: 10px;
-    width: 1139px;
+
     height: 156px;
     margin-bottom: 50px;
+    background: white;
 
 
+}
+.noticias{
+    padding: 0 !important;
 }
 .imagendestacada {
     background: #8BDDFC ;
@@ -609,4 +655,9 @@ ol.carousel-indicators li {
 .serviceboton:hover h1{
     color: white;
 }
-
+.skip-link{
+    display: none;
+}
+.excerpt-post p{
+    text-align: left;
+}
