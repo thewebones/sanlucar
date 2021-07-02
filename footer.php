@@ -15,6 +15,12 @@
 		
 	</footer><!-- #colophon -->
 </div><!-- #page -->
+<script src="<?php echo get_site_url(); ?>/wp-content/themes/sanlucar/vendors/popper.min.js"></script>
+<script src="<?php echo get_site_url(); ?>/wp-content/themes/sanlucar/vendors/jquery.min.js"></script>
+<script src="<?php echo get_site_url(); ?>/wp-content/themes/sanlucar/vendors/bootstrap.min.js"></script>
+<script src="<?php echo get_site_url(); ?>/wp-content/themes/sanlucar/vendors/swiper-bundle.min.js"></script>
+<script src="<?php echo get_site_url(); ?>/wp-content/themes/sanlucar/assets/js/main.js"></script>
+
 
 <?php wp_footer(); ?>
 

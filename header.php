@@ -16,6 +16,8 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
+    <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/sanlucar/vendors/bootstrap.min.css">
+	<link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/sanlucar/vendors/swiper-bundle.min.css">
 	<link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/sanlucar/assets/css/main.css">
 	<?php wp_head(); ?>
 </head>
@@ -34,18 +36,20 @@
 		</div>
 		<div class="logoContainer">
 			<a href="<?php echo get_field("logo_url","option") ?>">
-			<img style="margin-top:-36.5px;" width="146px" height="73px" src="<?php echo get_field("logo","option") ?>"/>
+			<img class="imgLogo" style="margin-top:-36.5px;" src="<?php echo get_field("logo","option") ?>"/>
 			</a>
 		</div>
-		<div class="menuContainer">
+		<div class="menuContainer" >
 			<div class="menu">
 				<?php if(get_field("repeater_menu_principal","option")) 
 				foreach(get_field("repeater_menu_principal","option") as $item){
 				?>
-				<div class="itemMenu">
-					<div class="imagenMenu">
-						<a href="<?php echo $item["enlace_item_menu"]["url"]?>">
-						<img src="<?php echo $item["icono_item_menu"]?>"/>
+				<div class="itemMenu"   >
+					<div class="<?php if($item["enlace_item_menu"]["title"]==="ALERTAS") echo "notify"?>"><span><?php if($item["enlace_item_menu"]["title"]==="ALERTAS") echo 1?></span></div>
+					<div onMouseOut="mostrar(event)" onMouseOver="ocultar(event)" class="imagenMenu">
+						<a class="link" href="<?php echo $item["enlace_item_menu"]["url"]?>">
+						<img class="front" src="<?php echo $item["icono_item_menu"]?>"/>
+						<img class="back" src="<?php echo $item["icono_item_menu_hover"]?>"/>
 						</a>
 					</div>
 					<a class="textoMenu" href="<?php echo $item["enlace_item_menu"]["url"]?>"><?php echo $item["enlace_item_menu"]["title"] ?></a>
@@ -54,3 +58,18 @@
 			</div>
 		</div>
 	</header><!-- #masthead -->
+    <style>
+        .video {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: auto;
+            z-index: -10;
+            visibility: visible;
+        }
+    </style>
+    <video class="video" autoplay="autoplay" loop="loop" muted="muted" >
+        <source src="<?php echo get_site_url(); ?>/wp-content/themes/sanlucar/assets/img/video.mp4" type="video/mp4" />
+
+    </video>
