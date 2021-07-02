@@ -196,6 +196,7 @@ body p{
     align-items: center;
     margin-bottom:20px;
     cursor: pointer;
+    padding-right: 10px;
 }
 
 .iconDoc{
@@ -216,7 +217,12 @@ body p{
 
 .descriptionDoc{
     color: gray;
+    text-align: justify;
 }
+.classNotFound{
+    color:white;
+}
+
 .app {
     margin-left: auto !important;
     margin-right: auto !important;
@@ -404,6 +410,7 @@ ol.carousel-indicators li {
     width: 42px;
     height: 22px;
 }
+
 
 @media (max-width:1256px){
     .allDocs .singleDocs{

@@ -65,13 +65,15 @@ $cats=get_categories($argsCategorias);
                
         ?>
             
-            <div class="singleDocs"  onClick="goLink(event)">
+            <div class="singleDocs" onClick="goLink(event)">
             <?php if($aux) {?>
             <a href="<?php echo $aux["url"] ?>"></a>
             <?php } ?>
+            <div>
 			<div class="iconDoc">  
 				<?php the_post_thumbnail();?>
 			</div>
+            </div>
 			<div class="textContainer">
                 <h1 class="tituloDoc"><?php echo the_title() ?></h1>
                 <p class="descriptionDoc"><?php echo get_the_excerpt() ?></p>
