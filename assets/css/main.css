@@ -2,6 +2,10 @@
     font-family: "Ubuntu-Bold";
      src: local("Ubuntu-Bold"), url(https://start.informagedevelop.com/wp-content/themes/sporcks/assets/font/Ubuntu-Bold.ttf) format("truetype");
 }
+@font-face {
+    font-family: "Ubuntu-Regular";
+    src: local("Ubuntu-Regular"), url(https://start.informagedevelop.com/wp-content/themes/sporcks/assets/font/Ubuntu-Regular.ttf) format("truetype");
+}
 
 *{
     margin: 0;
