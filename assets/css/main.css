@@ -183,6 +183,7 @@ body p{
     color:gray;
     padding-left: 30px;
     padding-right: 30px;
+<<<<<<< HEAD
     border: none;
     background: white;
 }
@@ -191,6 +192,11 @@ body p{
     width: 15px;
     background: white;
     border-radius: 0 10px 10px 0;
+=======
+    border-radius: 0 10px 10px 0;
+    border: none;
+
+>>>>>>> 413b1974692a79e998f8ca9f64c8c4eed09f6212
 }
 
 .allDocs{
@@ -229,7 +235,11 @@ body p{
     color:#021B5E;
     font-weight: bold;
     font-size: 24px;
+<<<<<<< HEAD
     font-family: Helvetica;
+=======
+    font-family: Helvetica Neue;
+>>>>>>> 413b1974692a79e998f8ca9f64c8c4eed09f6212
 }
 
 .descriptionDoc{
@@ -240,10 +250,17 @@ body p{
     color: #575A62;
     letter-spacing: 0.5px;
     line-height: 24px;
+<<<<<<< HEAD
 }
 .classNotFound{
     color:white;
 }
+=======
+}
+.classNotFound{
+    color:white;
+}
+>>>>>>> 413b1974692a79e998f8ca9f64c8c4eed09f6212
 
 .app {
     margin-left: auto !important;
