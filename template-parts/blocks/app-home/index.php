@@ -1,4 +1,4 @@
-    <section class="container app mt-5 row">
+<section class="container app mt-5 row">
         <div class="slider col-lg-6 mb-3"> 
         <div class="titulo">
             <h2>LucaNova</h2>
